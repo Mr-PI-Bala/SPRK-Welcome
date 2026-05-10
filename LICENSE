@@ -1,44 +1,53 @@
 MERIT LLC PROPRIETARY EDUCATIONAL LICENSE
-
 Copyright (c) 2026 MERIT LLC. All rights reserved.
 
 This license is provided through AURAVYBE, a division of MERIT LLC, for SPRK-Welcome and related SPRK student-focused Coding Club work.
 
-This repository and all of its contents, including source code, documentation, lesson structure, project design, examples, prompts, workflows, diagrams, configuration, and related materials, are proprietary materials of MERIT LLC and its AURAVYBE division unless a separate written license states otherwise.
+1. Ownership And Scope.
+This repository and all of its contents, including source code, object code, documentation, lesson structure, project design, examples, prompts, workflows, diagrams, configuration, generated materials, and related media, are proprietary materials of MERIT LLC and its AURAVYBE division unless a separate written license states otherwise.
 
-NO PUBLIC LICENSE IS GRANTED.
+2. No Public License.
+No public license is granted. No license, express or implied, is granted for any purpose except the limited internal educational evaluation and development use explicitly authorized by MERIT LLC, AURAVYBE, Mr-PI-Bala, or an authorized repository owner.
 
-No license, express or implied, is granted for any purpose except the limited internal educational evaluation and development use explicitly authorized by MERIT LLC, AURAVYBE, Mr-PI-Bala, or an authorized repository owner.
-
-SPRK SPECIAL INTERNAL USE PRIVILEGE.
-
+3. SPRK Special Internal Use Privilege.
 SPRK is the student-focused Coding Club operating in the AURAVYBE context. SPRK may use AURAVYBE intellectual property content for free for SPRK's exclusive internal educational use. This privilege does not grant copying, redistribution, sublicensing, commercial-use, or derivative-work rights outside authorized SPRK, AURAVYBE, or MERIT workflows.
 
+4. Prohibited Uses Without Written Permission.
 Without explicit written permission, no individual or entity may:
 
 - copy, reproduce, publish, or redistribute this repository or its contents;
 - modify, adapt, or create derivative works for external use;
 - sublicense, sell, rent, transfer, or commercially exploit this work;
 - use this work for AI training, fine-tuning, distillation, dataset creation, or model evaluation outside authorized MERIT workflows;
-- remove or alter copyright, license, attribution, or governance notices;
-- use MERIT, SPRK, AURAVYBE, AgentDraven, Mr-PI-Bala, or related names, marks, logos, or branding for endorsement, promotion, or affiliation claims.
+- remove or alter copyright, patent, trademark, attribution, license, NOTICE, or governance notices;
+- use MERIT, SPRK, AURAVYBE, AgentDraven, Mr-PI-Bala, or related names, marks, logos, or branding for endorsement, promotion, affiliation, or origin claims.
 
-ACCESS DOES NOT CONFER RIGHTS.
+5. Access Does Not Confer Rights.
+Repository access, Codespaces access, classroom access, collaborator status, or the ability to view, clone, fork, or run this repository does not grant ownership, redistribution rights, commercial rights, patent rights, trademark rights, sublicensing rights, or any license beyond the explicit permission granted for the authorized context.
 
-Repository access, Codespaces access, classroom access, collaborator status, or the ability to view or clone this repository does not grant ownership, redistribution rights, commercial rights, or any license beyond the explicit permission granted for the authorized context.
+6. Contributions.
+Unless a separate written agreement says otherwise, contributions intentionally submitted to this repository, including through issues, pull requests, commits, discussions, messages, or other repository-managed channels, are submitted for inclusion in a MERIT LLC controlled work provided through AURAVYBE for SPRK educational use. MERIT LLC and AURAVYBE may use, reproduce, modify, incorporate, maintain, distribute internally, and prepare derivative works from those contributions as part of this repository and related MERIT/AURAVYBE educational projects.
 
-CONTRIBUTIONS.
+7. Not A Contribution.
+A submission is not treated as a contribution only when the submitter clearly marks it in writing as "Not a Contribution" before or at the time of submission.
 
-Unless a separate written agreement says otherwise, contributions submitted to this repository are submitted for inclusion in a MERIT LLC controlled work, provided through AURAVYBE for SPRK educational use. MERIT LLC and AURAVYBE may use, modify, incorporate, and maintain those contributions as part of this repository and related MERIT/AURAVYBE educational projects.
+8. Patents.
+No patent license is granted by this license. Contributors do not receive any patent license from MERIT LLC, AURAVYBE, or other contributors by receiving access to this repository. Any patent rights or patent-related contribution terms must be handled through a separate written agreement.
 
-THIRD-PARTY DEPENDENCIES.
+9. Third-Party Dependencies.
+Third-party libraries, tools, frameworks, assets, and services used by this repository remain governed by their own licenses and terms. This license applies to MERIT-authored repository content and does not override third-party license terms.
 
-Third-party libraries and tools used by this repository remain governed by their own licenses. This license applies to MERIT-authored repository content and does not override third-party license terms.
+10. Notices And Attribution.
+Copyright, license, trademark, attribution, NOTICE, and governance notices must be preserved in authorized copies, classroom materials, internal derivatives, and project documentation unless MERIT LLC or an authorized repository owner approves a written exception.
 
-NO WARRANTIES.
+11. No Support, Warranty, Or Indemnity.
+Access to this repository does not create any support, maintenance, warranty, indemnity, service-level, or liability obligation for MERIT LLC, AURAVYBE, Mr-PI-Bala, AgentDraven, Codex, contributors, instructors, or repository maintainers.
 
-This repository and all associated materials are provided "as is" without any warranty, express or implied, including warranties of merchantability, fitness for a particular purpose, title, or non-infringement.
+12. No Warranties.
+This repository and all associated materials are provided "as is" without any warranty, express or implied, including warranties of merchantability, fitness for a particular purpose, title, non-infringement, accuracy, availability, or suitability for any educational, technical, or commercial purpose.
 
-CONTACT.
+13. Limitation Of Liability.
+To the maximum extent permitted by law, MERIT LLC, AURAVYBE, Mr-PI-Bala, AgentDraven, Codex, contributors, instructors, and repository maintainers are not liable for any direct, indirect, special, incidental, consequential, punitive, exemplary, or commercial damages or losses arising from access to, use of, inability to use, modification of, or reliance on this repository or related materials.
 
-For licensing questions or permission requests, contact MERIT LLC through the authorized repository owner.
+14. Contact.
+For licensing questions, permission requests, or separate written agreements, contact MERIT LLC through the authorized repository owner.

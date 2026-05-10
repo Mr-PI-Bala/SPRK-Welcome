@@ -1,9 +1,7 @@
-# SPRK CodeSpaces User Guide
-
+﻿# SPRK CodeSpaces User Guide
 This is the master SPRK guide for GitHub Codespaces.
 
 ## Table Of Contents
-
 - [What Codespaces Is](#what-codespaces-is)
 - [Open Codespaces](#open-codespaces)
 - [Runtime Levels](#runtime-levels)
@@ -13,7 +11,6 @@ This is the master SPRK guide for GitHub Codespaces.
 - [Classroom Device Testing](#classroom-device-testing)
 
 ## What Codespaces Is
-
 Codespaces is a cloud development machine that runs in the browser. It is useful for students on Chromebooks, iPads, shared computers, or machines where Python setup is hard.
 
 Codespaces is good for:
@@ -30,7 +27,6 @@ Codespaces is not always good for:
 - Testing 3D controls that require a visible app window.
 
 ## Open Codespaces
-
 From a GitHub repository:
 
 1. Click `Code`.
@@ -41,7 +37,6 @@ From a GitHub repository:
 6. Run the safe check.
 
 ## Runtime Levels
-
 Different devices support different levels of testing.
 
 ```text
@@ -65,7 +60,6 @@ The student sees the desktop app window in the browser, but this is the most adv
 Start with Level A. Use Level C when a Chromebook, iPad, phone, or school-managed device cannot show the graphical app directly.
 
 ## Safe Project Check
-
 For the primary browser-visible `SPRK-Hello-Repo`, use the check command documented inside that repository.
 
 For Python repositories that provide a safe check, the command usually looks like:
@@ -77,7 +71,6 @@ python -m core.main --check
 The check should validate project structure without opening a desktop graphics window.
 
 ## Graphics And Desktop App Limits
-
 If Codespaces shows this:
 
 ```text
@@ -99,7 +92,6 @@ python -m core.main
 ```
 
 ## Copilot Chat Took Too Long
-
 Symptom:
 
 ```text
@@ -135,7 +127,6 @@ GitHub.copilot-chat@...
 ```
 
 ## Classroom Device Testing
-
 Codespaces is not required for every student in the first classroom multiplayer test.
 
 For browser-visible projects in `SPRK-Hello-Repo`, one backend-host laptop can run the backend while students join from browsers on Chromebooks, iPads, iPhones, Android phones, or other laptops.

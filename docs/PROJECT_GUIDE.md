@@ -1,9 +1,7 @@
-# SPRK Welcome Project Guide
-
+﻿# SPRK Welcome Project Guide
 This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Codex.
 
 ## Master Table Of Contents
-
 - [Document Roles](#document-roles)
 - [Governance](#governance)
 - [Repository Purpose](#repository-purpose)
@@ -17,7 +15,6 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - [Release Flow](#release-flow)
 
 ## Document Roles
-
 - `README.md`: public front door.
 - `docs/USER_GUIDE.md`: public doorway guide for starting from SPRK-Welcome.
 - `docs/SPRK_Git_Repository_UserGuide.md`: master GitHub accounts, access requests, branches, commits, pushes, and Pull Requests guide.
@@ -30,7 +27,6 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - `VERSION`: current version.
 
 ## Governance
-
 This repository is owned by `Mr-PI-Bala`.
 
 Inside this repository, governance stops at `Mr-PI-Bala`. AgentDraven acts as `SPRKAdmin` when performing operational work for this repository.
@@ -42,7 +38,6 @@ Role categories:
 - `SPRKStudent`: student learner, tester, contributor, and critique voice.
 
 ## Repository Purpose
-
 `SPRK-Welcome` is the public doorway for SPRK. It should stay public, simple, and student-facing.
 
 It advertises the primary SPRK path and explains how students request access to working repositories.
@@ -62,7 +57,6 @@ advanced tracks by invitation or classroom readiness
 `SPRK-Hello-Repo` is the primary browser-visible hello-project collection. Advanced or specialized repositories should not be presented as the first working project from the public welcome page.
 
 ## Baseline Structure
-
 Official SPRK repositories should use this baseline unless there is a deliberate reason to differ:
 
 ```text
@@ -94,7 +88,6 @@ Reason:
 The first committed files should come from the SPRK baseline so license, docs, VS Code settings, and governance are consistent.
 
 ## AURAVYBE Organization Links
-
 AURAVYBE is the future organization home for cleaner SPRK access control. Current SPRK repositories may remain under `Mr-PI-Bala` until they are deliberately moved or recreated.
 
 Use these links when setting up or reviewing access:
@@ -113,7 +106,6 @@ Planned teams:
 Until SPRK repositories move into AURAVYBE, repository access for `Mr-PI-Bala` personal repositories is still managed from each repository's collaborator settings.
 
 ## Access And Approval Flow
-
 ```text
 Student opens SPRK-Welcome
   |
@@ -133,11 +125,9 @@ Student works in their branch
 Students should usually receive write access to create and push their own branches. `main` should be protected in working repositories.
 
 ## Documentation Principles
-
 These principles apply to SPRK-Welcome and to shared SPRK guide content copied into other repositories.
 
 ### Generalize First
-
 Write instructions so they work for the reader's account and repository unless the section is explicitly about a named persona.
 
 Use placeholders in reusable snippets:
@@ -157,7 +147,6 @@ Branch: <yourname-sprk> (example: maya-sprk)
 Avoid hard-coding `Mr-PI-Bala`, `Maya-SPRK`, or `AgentDraven` unless the section is specifically about that account.
 
 ### Account Context Comes Before Screen Diagnosis
-
 When a student or maintainer cannot find a GitHub button or tab, check the signed-in account and permission level before assuming the screen is too narrow or the UI changed.
 
 Example:
@@ -177,7 +166,6 @@ If this is a repository owned by another account, you need that owner/admin acco
 ```
 
 ### Name The Screen Areas
-
 When teaching GitHub, Codespaces, or VS Code, identify the screen area first.
 
 Use these labels:
@@ -190,9 +178,27 @@ Use these labels:
 - Right sidebar: About, Releases, Packages, Contributors, Languages.
 
 The visual orientation cheatsheet for this work is tracked in issue #5.
+### Use Compact Headings In SPRK Docs
+SPRK docs should use compact headings: the heading line is followed immediately by its content.
+
+Use:
+
+```md
+## Heading
+Content starts here.
+```
+
+Avoid:
+
+```md
+## Heading
+<blank line here>
+Content starts here.
+```
+
+Reason: students and maintainers often read raw Markdown in GitHub, Codespaces, or terminal output. Compact headings reduce vertical drift and make the document easier to scan in raw form.
 
 ### Repository Docs Are The Source Of Truth
-
 Codex memory can help continuity, but durable decisions belong in repository docs.
 
 Use this order:
@@ -203,9 +209,7 @@ Use this order:
 4. Keep changelog entries for released documentation changes.
 
 ## Formative Insights
-
 ### Missing Settings Can Mean Missing Permission
-
 Finding:
 
 A user looking at a repository may not see `Settings` even when the repository top bar is visible.
@@ -219,7 +223,6 @@ Action:
 Teach account context explicitly before giving delete, visibility, or access-management instructions.
 
 ### Examples Should Not Become Accidental Values
-
 Finding:
 
 If snippets say `Maya-SPRK` everywhere, students may copy Maya's value instead of replacing it with their own account.
@@ -233,7 +236,6 @@ Action:
 Use `<YourName>-SPRK` and `<yourname-sprk>` in snippets, then add examples in parentheses or a short example block.
 
 ### Issue Comments Are Good Capture, Not Final Documentation
-
 Finding:
 
 Real workflow lessons often appear first in chat or issue comments.
@@ -245,9 +247,20 @@ Issue comments are useful for not losing the lesson, but they are not the final 
 Action:
 
 Promote stable issue-comment lessons into `PROJECT_GUIDE.md`, `USER_GUIDE.md`, or the shared SPRK toolchain guides.
+### Proprietary Licenses Need Explicit No-Grant Terms
+Finding:
+
+Apache 2.0 is a strong permissive open-source license because it explicitly covers copyright grants, patent grants, redistribution duties, contribution submission, trademarks, warranty, liability, and support/indemnity boundaries.
+
+Learning:
+
+For MERIT/AURAVYBE proprietary protection, the license should not copy Apache's permissive grants. It should explicitly say which rights are not granted, preserve notices and attribution, define contribution handling, and disclaim patent, warranty, support, indemnity, and liability obligations.
+
+Action:
+
+Keep the MERIT/AURAVYBE proprietary license explicit about no public license, no patent license, access not conferring rights, contribution treatment, notice preservation, third-party licenses, no support/warranty/indemnity, and limitation of liability.
 
 ### Multiplayer Classroom Tests Need A Host Laptop
-
 Finding:
 
 Browser-based class collaboration needs a backend host that other student devices can reach.
@@ -261,7 +274,6 @@ Action:
 Use `docs/SPRK_Classroom_Network_Test_Guide.md` before a live class activity. Test school Wi-Fi first, then the `SPRK Laptop Network`, then fallback to projector/shared-laptop roles if networking blocks device-to-device traffic.
 
 ## Diagram Standard
-
 Use Mermaid first for diagrams.
 
 Reasons:
@@ -273,7 +285,6 @@ Reasons:
 Use ASCII charts beside Mermaid when the flow must be easy to copy and paste in plain text.
 
 ## Classroom Network Strategy
-
 SPRK classroom apps should support a low-friction collaboration pattern:
 
 ```text
@@ -306,7 +317,6 @@ Before using a classroom multiplayer project, validate with:
 Use [SPRK_Classroom_Network_Test_Guide.md](SPRK_Classroom_Network_Test_Guide.md) as the test script.
 
 ## Release Flow
-
 Use `major.minor.patch` versions.
 
 Early setup releases use `0.0.x`.

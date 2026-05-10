@@ -1,5 +1,4 @@
-# SPRK Classroom Network Test Guide
-
+﻿# SPRK Classroom Network Test Guide
 This guide explains how to test a classroom setup where one laptop hosts a backend and students join from Chromebooks, iPads, iPhones, Android phones, or other laptops.
 
 The goal is to prove this pattern before class:
@@ -15,7 +14,6 @@ Student devices open the app in a browser
 ```
 
 ## Table Of Contents
-
 - [Recommended Device Roles](#recommended-device-roles)
 - [Network Options](#network-options)
 - [TCL LINKPORT IK511 Note](#tcl-linkport-ik511-note)
@@ -27,7 +25,6 @@ Student devices open the app in a browser
 - [Alpha Student Validation](#alpha-student-validation)
 
 ## Recommended Device Roles
-
 Use a real laptop as the backend host.
 
 Recommended backend host:
@@ -55,11 +52,9 @@ Student devices can be lighter:
 Student devices only need a browser for the first multiplayer classroom tests.
 
 ## Network Options
-
 Try networks in this order.
 
 ### Option A - School Network
-
 Use the normal school Wi-Fi first.
 
 This is best if it works because students are already allowed to use it.
@@ -69,7 +64,6 @@ Possible blocker:
 Some school networks use device isolation. That means a student Chromebook may have internet access but cannot connect to a backend running on the teacher laptop.
 
 ### Option B - SPRK Laptop Network
-
 The `SPRK Laptop Network` is a private classroom network started from the backend-host laptop.
 
 Use this when the school network blocks device-to-device traffic.
@@ -86,7 +80,6 @@ Student devices open the backend laptop IP address in a browser.
 This keeps the classroom test isolated from school network restrictions where possible.
 
 ### Option C - Projector And Pairing
-
 If networking fails, use one visible laptop/projector and assign active roles:
 
 - Driver: controls the code.
@@ -98,7 +91,6 @@ If networking fails, use one visible laptop/projector and assign active roles:
 No student should become passive because they lack a device.
 
 ## TCL LINKPORT IK511 Note
-
 The TCL LINKPORT IK511 is a USB-C cellular internet device. Treat it as internet for one host device, not as a normal multi-device classroom hotspot by itself.
 
 Expected use:
@@ -120,7 +112,6 @@ What must be tested:
 Do not assume the LINKPORT alone supports a full classroom of direct Wi-Fi clients.
 
 ## Test Accounts
-
 Use different accounts to simulate real classroom roles.
 
 Example test setup:
@@ -140,18 +131,15 @@ Student device: <YourName>-SPRK or another student test account
 ```
 
 ## Four Device Test
-
 Run this test before using the setup with students.
 
 ### Step 1 - Connect Devices
-
 Connect all devices to the same network:
 
 - School Wi-Fi, or
 - SPRK Laptop Network
 
 ### Step 2 - Start Backend
-
 On the backend-host laptop, start the app so it listens on all network interfaces.
 
 Example:
@@ -169,7 +157,6 @@ The important part is:
 That means other devices can connect. `localhost` only works on the same machine.
 
 ### Step 3 - Find Host IP
-
 On Windows PowerShell:
 
 ```powershell
@@ -185,7 +172,6 @@ Example:
 ```
 
 ### Step 4 - Open From Student Devices
-
 On each student device browser:
 
 ```text
@@ -199,7 +185,6 @@ http://192.168.137.1:8000
 ```
 
 ### Step 5 - Validate Interaction
-
 Each device should be able to:
 
 - Load the page.
@@ -208,7 +193,6 @@ Each device should be able to:
 - See shared score, game state, or leaderboard changes.
 
 ## Backend Host Requirements
-
 The backend host must:
 
 - Run the backend app.
@@ -221,7 +205,6 @@ The backend host must:
 For Windows Firewall, allow Python or Node when prompted for a private network.
 
 ## Student Device Requirements
-
 Student devices need:
 
 - Browser access.
@@ -240,7 +223,6 @@ They do not need a personal laptop if they can use:
 - paired teammate device
 
 ## Classroom Fallbacks
-
 Use this order:
 
 ```text
@@ -265,7 +247,6 @@ If device networking fails, still run the collaboration:
 - Students design the next feature.
 
 ## Alpha Student Validation
-
 Maya.SPRK should validate this guide as the Alpha Student.
 
 Maya checks:
