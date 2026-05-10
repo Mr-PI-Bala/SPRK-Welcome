@@ -21,7 +21,7 @@ SPRK member accounts use a consistent clan-style identity.
 - Public profile name: `FirstName SPRK`
 - GitHub username: `FirstName-SPRK`
 - Email pattern when available: `firstname.SPRK@gmail.com`
-- Branch name: GitHub username in lowercase, such as `maya-sprk`
+- Branch name: GitHub username in lowercase, such as `<yourname-sprk>`
 
 Example:
 
@@ -29,6 +29,8 @@ Example:
 - GitHub username: `Maya-SPRK`
 - Email: `maya.SPRK@gmail.com` when available
 - Branch name: `maya-sprk`
+
+In copy/paste snippets, replace `<YourName>-SPRK` and `<yourname-sprk>` with your own values. For Maya, those values are `Maya-SPRK` and `maya-sprk`.
 
 If you convert an existing GitHub account, update old bookmarks, Codespaces sign-in, local remotes, and connected tools. If the account already has important prior work, create a new SPRK account instead.
 
@@ -68,7 +70,7 @@ Steps:
 Example title:
 
 ```text
-Access request: Maya-SPRK branch access for SPRK-Hello-Ursina
+Access request: <YourName>-SPRK branch access for SPRK-Hello-Ursina
 ```
 
 Example body:
@@ -76,10 +78,10 @@ Example body:
 ~~~md
 ## Access Request
 
-Requester: `Maya-SPRK`
+Requester: `<YourName>-SPRK` (example: `Maya-SPRK`)
 Repository: `Mr-PI-Bala/SPRK-Hello-Ursina`
 Requested access: `Write`
-Branch name: `maya-sprk`
+Branch name: `<yourname-sprk>` (example: `maya-sprk`)
 
 ## Why this access is needed
 
@@ -97,7 +99,7 @@ Open repository access settings:
 
 https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina/settings/access
 
-Add `Maya-SPRK` as collaborator.
+Add `<YourName>-SPRK` as collaborator.
 ~~~
 
 ## Accept A Pending Invitation
@@ -118,7 +120,7 @@ Pull the latest `main`, then create your branch.
 
 ```bash
 git pull
-git checkout -b maya-sprk
+git checkout -b <yourname-sprk>
 ```
 
 Use your own GitHub username in lowercase as the branch name.
@@ -132,7 +134,7 @@ python -m core.main --check
 git status
 git add .
 git commit -m "Describe your change"
-git push -u origin maya-sprk
+git push -u origin <yourname-sprk>
 ```
 
 Commit messages should explain what changed. Use commits as checkpoints while learning.

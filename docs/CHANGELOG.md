@@ -2,6 +2,15 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.5 - 2026-05-10
+
+Improved student-facing copy/paste snippets.
+
+### Changed
+
+- Replaced hard-coded Maya values in reusable snippets with `<YourName>-SPRK` and `<yourname-sprk>` placeholders.
+- Kept Maya as the example pattern where it helps students see how to fill in the placeholders.
+
 ## 0.0.4 - 2026-05-10
 
 Shared SPRK toolchain guide split.

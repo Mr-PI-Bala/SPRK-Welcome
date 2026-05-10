@@ -60,4 +60,4 @@ Make change, commit, push, and open a Pull Request
 
 ## Current Version
 
-`0.0.4`
+`0.0.5`
