@@ -10,6 +10,8 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - [Baseline Structure](#baseline-structure)
 - [AURAVYBE Organization Links](#auravybe-organization-links)
 - [Access And Approval Flow](#access-and-approval-flow)
+- [Documentation Principles](#documentation-principles)
+- [Formative Insights](#formative-insights)
 - [Diagram Standard](#diagram-standard)
 - [Release Flow](#release-flow)
 
@@ -112,6 +114,120 @@ Student works in their branch
 ```
 
 Students should usually receive write access to create and push their own branches. `main` should be protected in working repositories.
+
+## Documentation Principles
+
+These principles apply to SPRK-Welcome and to shared SPRK guide content copied into other repositories.
+
+### Generalize First
+
+Write instructions so they work for the reader's account and repository unless the section is explicitly about a named persona.
+
+Use placeholders in reusable snippets:
+
+- `<YourName>-SPRK`
+- `<yourname-sprk>`
+- `<repository-owner>`
+- `<repository-name>`
+
+Then provide one nearby example:
+
+```text
+Requester: <YourName>-SPRK (example: Maya-SPRK)
+Branch: <yourname-sprk> (example: maya-sprk)
+```
+
+Avoid hard-coding `Mr-PI-Bala`, `Maya-SPRK`, or `AgentDraven` unless the section is specifically about that account.
+
+### Account Context Comes Before Screen Diagnosis
+
+When a student or maintainer cannot find a GitHub button or tab, check the signed-in account and permission level before assuming the screen is too narrow or the UI changed.
+
+Example:
+
+```text
+If you do not see Settings, check whether you are signed in as the repository owner or an account with admin permission.
+```
+
+General wording:
+
+```text
+For delete, visibility, repository settings, and access-management actions, sign in as the repository owner/admin account.
+
+If this is your own repository, sign in as your own <FirstName>-SPRK account.
+
+If this is a repository owned by another account, you need that owner/admin account or delegated admin permission.
+```
+
+### Name The Screen Areas
+
+When teaching GitHub, Codespaces, or VS Code, identify the screen area first.
+
+Use these labels:
+
+- Browser toolbar: address bar and browser buttons.
+- GitHub global header: GitHub logo, search, plus button, profile avatar.
+- Repository identity: `<repository-owner> / <repository-name>`.
+- Repository top bar: `Code`, `Issues`, `Pull requests`, `Actions`, `Settings`, and related repo tabs.
+- File toolbar: branch selector, file search, green `Code` button.
+- Right sidebar: About, Releases, Packages, Contributors, Languages.
+
+The visual orientation cheatsheet for this work is tracked in issue #5.
+
+### Repository Docs Are The Source Of Truth
+
+Codex memory can help continuity, but durable decisions belong in repository docs.
+
+Use this order:
+
+1. Capture the live learning in a GitHub issue or issue comment.
+2. Move stable lessons into `docs/PROJECT_GUIDE.md`.
+3. Move student-facing instructions into the correct user guide or cheatsheet.
+4. Keep changelog entries for released documentation changes.
+
+## Formative Insights
+
+### Missing Settings Can Mean Missing Permission
+
+Finding:
+
+A user looking at a repository may not see `Settings` even when the repository top bar is visible.
+
+Learning:
+
+This can happen because the signed-in account does not own or administer the repository. For example, a SPRKStudent account viewing a repository owned by another account may see `Code`, `Issues`, and `Pull requests`, but not `Settings`.
+
+Action:
+
+Teach account context explicitly before giving delete, visibility, or access-management instructions.
+
+### Examples Should Not Become Accidental Values
+
+Finding:
+
+If snippets say `Maya-SPRK` everywhere, students may copy Maya's value instead of replacing it with their own account.
+
+Learning:
+
+Reusable snippets should use placeholders first and a single nearby example second.
+
+Action:
+
+Use `<YourName>-SPRK` and `<yourname-sprk>` in snippets, then add examples in parentheses or a short example block.
+
+### Issue Comments Are Good Capture, Not Final Documentation
+
+Finding:
+
+Real workflow lessons often appear first in chat or issue comments.
+
+Learning:
+
+Issue comments are useful for not losing the lesson, but they are not the final student-facing guide.
+
+Action:
+
+Promote stable issue-comment lessons into `PROJECT_GUIDE.md`, `USER_GUIDE.md`, or the shared SPRK toolchain guides.
 
 ## Diagram Standard
 

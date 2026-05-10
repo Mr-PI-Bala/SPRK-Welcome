@@ -2,6 +2,17 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.6 - 2026-05-10
+
+Captured durable documentation principles.
+
+### Added
+
+- Added `Documentation Principles` to `docs/PROJECT_GUIDE.md`.
+- Added `Formative Insights` to `docs/PROJECT_GUIDE.md`.
+- Documented account-context checks for missing GitHub `Settings`.
+- Documented the placeholder-first snippet pattern for student-facing instructions.
+
 ## 0.0.5 - 2026-05-10
 
 Improved student-facing copy/paste snippets.
