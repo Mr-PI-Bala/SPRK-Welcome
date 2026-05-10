@@ -6,6 +6,7 @@ This guide is for SPRK students and members who are starting from GitHub.
 
 - [Create Or Convert A SPRK GitHub Account](#create-or-convert-a-sprk-github-account)
 - [Request Access](#request-access)
+- [Request Access To A Working Repository](#request-access-to-a-working-repository)
 - [Open A Working Repository](#open-a-working-repository)
 - [Use Codespaces](#use-codespaces)
 - [Create Your Branch](#create-your-branch)
@@ -73,6 +74,54 @@ flowchart TD
     C --> D[SPRKTeacher or SPRKAdmin approves]
     D --> E[Open the working repository]
 ```
+
+## Request Access To A Working Repository
+
+If a repository is private, or if you can read it but cannot push your branch, open an access request issue.
+
+In the working repository:
+
+1. Click `Issues`.
+2. Click `New issue`.
+3. Use a clear title.
+4. Explain who you are, what repository you need, what branch you will use, and what access you are requesting.
+
+Example title:
+
+```text
+Access request: Maya-SPRK branch access for SPRK-Hello-Ursina
+```
+
+Example body:
+
+```md
+## Access Request
+
+Requester: `Maya-SPRK`
+Repository: `Mr-PI-Bala/SPRK-Hello-Ursina`
+Requested access: `Write`
+Branch name: `maya-sprk`
+
+## Why this access is needed
+
+I am testing the SPRKStudent workflow and need to push my own branch for review.
+
+## Boundaries
+
+I will not push to `main`.
+I will not merge pull requests.
+I will open a Pull Request for SPRKTeacher or SPRKAdmin review.
+
+## Owner Action
+
+Open repository access settings:
+
+https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina/settings/access
+
+Add `Maya-SPRK` as collaborator.
+```
+
+After the owner sends the invite, accept the pending invitation before trying to push.
 
 ## Open A Working Repository
 

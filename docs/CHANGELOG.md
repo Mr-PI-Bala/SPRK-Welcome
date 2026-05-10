@@ -2,6 +2,16 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.3 - 2026-05-10
+
+Student access request guidance.
+
+### Added
+
+- Added direct start links to `README.md`.
+- Added `Request Access To A Working Repository` to `docs/USER_GUIDE.md`.
+- Added a copy/paste access-request issue example.
+
 ## 0.0.2 - 2026-05-10
 
 AURAVYBE organization link reference.
