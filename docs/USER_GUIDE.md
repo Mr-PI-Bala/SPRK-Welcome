@@ -1,135 +1,76 @@
 # SPRK Welcome User Guide
 
-This guide is for SPRK students and members who are starting from GitHub.
+This guide is the front door for SPRK students and members starting from GitHub.
 
-## Master Table Of Contents
+For detailed toolchain instructions, use the master SPRK guides:
 
-- [Create Or Convert A SPRK GitHub Account](#create-or-convert-a-sprk-github-account)
-- [Request Access](#request-access)
-- [Request Access To A Working Repository](#request-access-to-a-working-repository)
-- [Open A Working Repository](#open-a-working-repository)
-- [Use Codespaces](#use-codespaces)
-- [Create Your Branch](#create-your-branch)
-- [Open A Pull Request](#open-a-pull-request)
-- [View Diagrams](#view-diagrams)
+- [SPRK Git Repository User Guide](SPRK_Git_Repository_UserGuide.md)
+- [SPRK CodeSpaces User Guide](SPRK_CodeSpaces_UserGuide.md)
+- [SPRK VS Code User Guide](SPRK_VSCode_UserGuide.md)
 
-## Create Or Convert A SPRK GitHub Account
+## Table Of Contents
 
-SPRK member accounts use a consistent clan-style identity.
+- [Start Here](#start-here)
+- [SPRK Path](#sprk-path)
+- [Working Repositories](#working-repositories)
+- [What To Read Next](#what-to-read-next)
 
-Recommended pattern:
+## Start Here
 
-- Public profile name: `FirstName SPRK`
-- GitHub username: `FirstName-SPRK`
-- Email pattern: `firstname.SPRK@gmail.com`
-- Branch name: `firstname-sprk`
+SPRK-Welcome is public. It explains how students find working repositories, request access, open Codespaces, and work on their own branches.
 
-Example:
-
-- Public profile name: `Maya SPRK`
-- GitHub username: `Maya-SPRK`
-- Email: `maya.SPRK@gmail.com` when available
-- Branch name: `maya-sprk`
-
-If you already have a GitHub account and want to convert it:
-
-1. Sign in to that GitHub account.
-2. Open GitHub `Settings`.
-3. In `Public profile`, set first name to your first name and last name to `SPRK`.
-4. In `Account`, change the username to `FirstName-SPRK` if available.
-5. Sign out and sign back in if Codespaces or GitHub still shows the old name.
-
-Caution:
-
-Changing a GitHub username can affect old profile links, repository links, bookmarks, mentions, Codespaces display, local Git remotes, and connected tools. If the account already has important prior work, create a new SPRK account instead of converting the old one.
-
-## Request Access
-
-SPRK-Welcome is public. Some working repositories may be private.
-
-Student flow:
+Official doorway:
 
 ```text
+https://github.com/Mr-PI-Bala/SPRK-Welcome
+```
+
+First working project:
+
+```text
+https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina
+```
+
+## SPRK Path
+
+```text
+Create or convert a GitHub account
+  |
+  v
 Read SPRK-Welcome
   |
   v
-Find the working repository
+Request access to a working repository
   |
   v
-Request access
+Open Codespaces
   |
   v
-SPRKTeacher or SPRKAdmin approves
+Run the safe project check
   |
   v
-Open the working repository
+Create your branch
+  |
+  v
+Make change, commit, push, and open a Pull Request
 ```
 
 Mermaid version:
 
 ```mermaid
 flowchart TD
-    A[Read SPRK-Welcome] --> B[Find the working repository]
-    B --> C[Request access]
-    C --> D[SPRKTeacher or SPRKAdmin approves]
-    D --> E[Open the working repository]
+    A[Create or convert a GitHub account] --> B[Read SPRK-Welcome]
+    B --> C[Request access to a working repository]
+    C --> D[Open Codespaces]
+    D --> E[Run the safe project check]
+    E --> F[Create your branch]
+    F --> G[Make change, commit, push]
+    G --> H[Open a Pull Request]
 ```
 
-## Request Access To A Working Repository
+## Working Repositories
 
-If a repository is private, or if you can read it but cannot push your branch, open an access request issue.
-
-In the working repository:
-
-1. Click `Issues`.
-2. Click `New issue`.
-3. Use a clear title.
-4. Explain who you are, what repository you need, what branch you will use, and what access you are requesting.
-
-Example title:
-
-```text
-Access request: Maya-SPRK branch access for SPRK-Hello-Ursina
-```
-
-Example body:
-
-```md
-## Access Request
-
-Requester: `Maya-SPRK`
-Repository: `Mr-PI-Bala/SPRK-Hello-Ursina`
-Requested access: `Write`
-Branch name: `maya-sprk`
-
-## Why this access is needed
-
-I am testing the SPRKStudent workflow and need to push my own branch for review.
-
-## Boundaries
-
-I will not push to `main`.
-I will not merge pull requests.
-I will open a Pull Request for SPRKTeacher or SPRKAdmin review.
-
-## Owner Action
-
-Open repository access settings:
-
-https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina/settings/access
-
-Add `Maya-SPRK` as collaborator.
-```
-
-After the owner sends the invite, accept the pending invitation before trying to push.
-
-## Open A Working Repository
-
-Use the full GitHub project link:
-
-```text
-https://github.com/<owner>/<repository>
-```
+Working repositories are where students build and test projects.
 
 Example:
 
@@ -137,44 +78,10 @@ Example:
 https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina
 ```
 
-Use the `.git` URL when cloning or adding a Git remote:
+If a working repository is private, request access using the [SPRK Git Repository User Guide](SPRK_Git_Repository_UserGuide.md).
 
-```text
-https://github.com/<owner>/<repository>.git
-```
+## What To Read Next
 
-## Use Codespaces
-
-Codespaces lets a student work in a browser without setting up a laptop development environment.
-
-After opening a working repository:
-
-1. Click `Code`.
-2. Choose `Codespaces`.
-3. Create or open a Codespace.
-4. Read the repository's `README.md` and `docs/USER_GUIDE.md`.
-5. Run the safe project check described by that repository.
-
-## Create Your Branch
-
-Use your GitHub username as your branch name, in lowercase.
-
-Example:
-
-```bash
-git checkout -b maya-sprk
-```
-
-Students commit work to their branch and open a Pull Request for review.
-
-## Open A Pull Request
-
-After pushing your branch, open a Pull Request.
-
-`SPRKTeacher` or `SPRKAdmin` reviews the work before it enters `main`.
-
-## View Diagrams
-
-SPRK uses Mermaid diagrams in Markdown.
-
-Students do not need a Mermaid account. GitHub renders Mermaid diagrams directly in Markdown. Codespaces can preview them with Markdown Preview and the recommended `Markdown Mermaid` extension.
+- Need GitHub access, branches, commits, pushes, or pull requests: [SPRK Git Repository User Guide](SPRK_Git_Repository_UserGuide.md)
+- Need Codespaces setup, safe checks, or graphics limits: [SPRK CodeSpaces User Guide](SPRK_CodeSpaces_UserGuide.md)
+- Need Markdown preview, editing, Mermaid, or extension guidance: [SPRK VS Code User Guide](SPRK_VSCode_UserGuide.md)

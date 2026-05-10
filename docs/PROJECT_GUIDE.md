@@ -16,7 +16,10 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 ## Document Roles
 
 - `README.md`: public front door.
-- `docs/USER_GUIDE.md`: student path for accounts, access, Codespaces, branches, and Pull Requests.
+- `docs/USER_GUIDE.md`: public doorway guide for starting from SPRK-Welcome.
+- `docs/SPRK_Git_Repository_UserGuide.md`: master GitHub accounts, access requests, branches, commits, pushes, and Pull Requests guide.
+- `docs/SPRK_CodeSpaces_UserGuide.md`: master Codespaces runtime levels, safe checks, and graphics limits guide.
+- `docs/SPRK_VSCode_UserGuide.md`: master VS Code Markdown preview/editing, Mermaid, and extension guide.
 - `docs/PROJECT_GUIDE.md`: maintainer path for governance and repository operations.
 - `docs/CHANGELOG.md`: version history.
 - `LICENSE`: MERIT/AURAVYBE license terms.
@@ -50,6 +53,9 @@ LICENSE
 VERSION
 docs/
   USER_GUIDE.md
+  SPRK_Git_Repository_UserGuide.md
+  SPRK_CodeSpaces_UserGuide.md
+  SPRK_VSCode_UserGuide.md
   PROJECT_GUIDE.md
   CHANGELOG.md
 .vscode/

@@ -2,6 +2,21 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.4 - 2026-05-10
+
+Shared SPRK toolchain guide split.
+
+### Added
+
+- Added master `docs/SPRK_Git_Repository_UserGuide.md`.
+- Added master `docs/SPRK_CodeSpaces_UserGuide.md`.
+- Added master `docs/SPRK_VSCode_UserGuide.md`.
+- Added a short Quick Start Guide to `README.md`.
+
+### Changed
+
+- Refocused `docs/USER_GUIDE.md` as the public doorway guide.
+
 ## 0.0.3 - 2026-05-10
 
 Student access request guidance.
