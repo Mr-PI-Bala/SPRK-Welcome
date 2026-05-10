@@ -8,7 +8,7 @@ This is the master SPRK guide for GitHub Codespaces.
 - [Open Codespaces](#open-codespaces)
 - [Runtime Levels](#runtime-levels)
 - [Safe Project Check](#safe-project-check)
-- [Ursina Graphics Limits](#ursina-graphics-limits)
+- [Graphics And Desktop App Limits](#graphics-and-desktop-app-limits)
 - [Copilot Chat Took Too Long](#copilot-chat-took-too-long)
 - [Classroom Device Testing](#classroom-device-testing)
 
@@ -26,7 +26,7 @@ Codespaces is good for:
 
 Codespaces is not always good for:
 
-- Showing a desktop graphics window from Ursina/Panda3D.
+- Showing a desktop graphics window from a 3D engine or desktop app.
 - Testing 3D controls that require a visible app window.
 
 ## Open Codespaces
@@ -47,11 +47,11 @@ Different devices support different levels of testing.
 ```text
 Level A - Code/check only
 Use Codespaces to read, edit, and run the safe check.
-No visible Ursina graphics window.
+No visible desktop graphics window.
 
 Level B - Headless graphics
 Codespaces runs a fake X11 display such as Xvfb.
-This can prove Ursina/Panda3D starts, but the student still may not see the window.
+This can prove a graphics engine starts, but the student still may not see the window.
 
 Level C - Dual-device visual test
 Student codes in Codespaces.
@@ -59,22 +59,24 @@ SPRKTeacher or SPRKAdmin pulls the student branch on a graphics-capable laptop a
 
 Level D - Browser-visible virtual desktop
 Codespaces runs a virtual desktop such as noVNC.
-The student sees the Ursina window in the browser, but this is the most advanced and fragile path.
+The student sees the desktop app window in the browser, but this is the most advanced and fragile path.
 ```
 
 Start with Level A. Use Level C when a Chromebook, iPad, phone, or school-managed device cannot show the graphical app directly.
 
 ## Safe Project Check
 
-For `SPRK-Hello-Ursina`, use:
+For the primary browser-visible `SPRK-Hello-Repo`, use the check command documented inside that repository.
+
+For Python repositories that provide a safe check, the command usually looks like:
 
 ```bash
 python -m core.main --check
 ```
 
-The check validates project structure and student-facing menu setup without opening the 3D window.
+The check should validate project structure without opening a desktop graphics window.
 
-## Ursina Graphics Limits
+## Graphics And Desktop App Limits
 
 If Codespaces shows this:
 
@@ -82,7 +84,7 @@ If Codespaces shows this:
 Exception: No graphics pipe is available!
 ```
 
-that means Ursina/Panda3D cannot find a graphical display.
+that means the app cannot find a graphical display.
 
 Use the safe check in Codespaces:
 
@@ -90,7 +92,7 @@ Use the safe check in Codespaces:
 python -m core.main --check
 ```
 
-Run the visible app on a graphics-capable laptop:
+Run visible desktop or 3D apps on a graphics-capable laptop:
 
 ```powershell
 python -m core.main

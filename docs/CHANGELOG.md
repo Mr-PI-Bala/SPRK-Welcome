@@ -2,6 +2,16 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.8 - 2026-05-10
+
+Corrected the public repository path.
+
+### Changed
+
+- Replaced stale `SPRK-Hello-Ursina` public doorway references with `SPRK-Hello-Repo`.
+- Generalized CodeSpaces graphics guidance so advanced 3D repositories are not presented as the first student path.
+- Added `SPRK-Welcome -> SPRK-Hello-Repo -> advanced tracks` as the public-facing repository path in `PROJECT_GUIDE.md`.
+
 ## 0.0.7 - 2026-05-10
 
 Added classroom network test guidance.

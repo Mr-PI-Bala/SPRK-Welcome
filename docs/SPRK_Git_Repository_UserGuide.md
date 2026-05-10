@@ -70,7 +70,7 @@ Steps:
 Example title:
 
 ```text
-Access request: <YourName>-SPRK branch access for SPRK-Hello-Ursina
+Access request: <YourName>-SPRK branch access for SPRK-Hello-Repo
 ```
 
 Example body:
@@ -79,7 +79,7 @@ Example body:
 ## Access Request
 
 Requester: `<YourName>-SPRK` (example: `Maya-SPRK`)
-Repository: `Mr-PI-Bala/SPRK-Hello-Ursina`
+Repository: `Mr-PI-Bala/SPRK-Hello-Repo`
 Requested access: `Write`
 Branch name: `<yourname-sprk>` (example: `maya-sprk`)
 
@@ -97,7 +97,7 @@ I will open a Pull Request for SPRKTeacher or SPRKAdmin review.
 
 Open repository access settings:
 
-https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina/settings/access
+https://github.com/Mr-PI-Bala/SPRK-Hello-Repo/settings/access
 
 Add `<YourName>-SPRK` as collaborator.
 ~~~
@@ -111,7 +111,7 @@ Open the invitation from GitHub notifications or email, then accept it before tr
 If using GitHub CLI, check permission:
 
 ```bash
-gh repo view Mr-PI-Bala/SPRK-Hello-Ursina --json viewerPermission
+gh repo view Mr-PI-Bala/SPRK-Hello-Repo --json viewerPermission
 ```
 
 ## Create Your Branch

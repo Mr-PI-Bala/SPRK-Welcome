@@ -45,7 +45,21 @@ Role categories:
 
 `SPRK-Welcome` is the public doorway for SPRK. It should stay public, simple, and student-facing.
 
-It advertises available SPRK paths and explains how students request access to private working repositories.
+It advertises the primary SPRK path and explains how students request access to working repositories.
+
+Public-facing repository path:
+
+```text
+SPRK-Welcome
+  |
+  v
+SPRK-Hello-Repo
+  |
+  v
+advanced tracks by invitation or classroom readiness
+```
+
+`SPRK-Hello-Repo` is the primary browser-visible hello-project collection. Advanced or specialized repositories should not be presented as the first working project from the public welcome page.
 
 ## Baseline Structure
 

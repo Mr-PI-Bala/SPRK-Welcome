@@ -25,10 +25,10 @@ Official doorway:
 https://github.com/Mr-PI-Bala/SPRK-Welcome
 ```
 
-First working project:
+Primary hello-project repository:
 
 ```text
-https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina
+https://github.com/Mr-PI-Bala/SPRK-Hello-Repo
 ```
 
 ## SPRK Path
@@ -40,10 +40,10 @@ Create or convert a GitHub account
 Read SPRK-Welcome
   |
   v
-Request access to a working repository
+Request access to SPRK-Hello-Repo when needed
   |
   v
-Open Codespaces
+Open Codespaces or a browser-visible project
   |
   v
 Run the safe project check
@@ -72,10 +72,10 @@ flowchart TD
 
 Working repositories are where students build and test projects.
 
-Example:
+Primary example:
 
 ```text
-https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina
+https://github.com/Mr-PI-Bala/SPRK-Hello-Repo
 ```
 
 If a working repository is private, request access using the [SPRK Git Repository User Guide](SPRK_Git_Repository_UserGuide.md).

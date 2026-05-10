@@ -2,12 +2,12 @@
 
 Public doorway for SPRK students to learn how to join, request access, and start using SPRK repositories.
 
-SPRK is the student-focused Coding Club in the AURAVYBE context. This repository is the public front door. It explains the student path before a student receives access to private working repositories such as `SPRK-Hello-Ursina`.
+SPRK is the student-focused Coding Club in the AURAVYBE context. This repository is the public front door. It explains the student path before a student receives access to the primary hello-project repository.
 
 ## Start Here
 
 - Official doorway: `https://github.com/Mr-PI-Bala/SPRK-Welcome`
-- First working project: `https://github.com/Mr-PI-Bala/SPRK-Hello-Ursina`
+- Primary hello-project repository: `https://github.com/Mr-PI-Bala/SPRK-Hello-Repo`
 - [Create or convert a SPRK GitHub account](docs/SPRK_Git_Repository_UserGuide.md#sprk-github-account-pattern)
 - [Request access to a working repository](docs/SPRK_Git_Repository_UserGuide.md#request-access-to-a-working-repository)
 - [Use Codespaces](docs/SPRK_CodeSpaces_UserGuide.md)
@@ -34,10 +34,10 @@ Create or convert a GitHub account
 Read SPRK-Welcome
   |
   v
-Request access to a working repository
+Request access to SPRK-Hello-Repo when needed
   |
   v
-Open Codespaces
+Open Codespaces or a browser-visible project
   |
   v
 Run the safe project check
@@ -63,4 +63,4 @@ Make change, commit, push, and open a Pull Request
 
 ## Current Version
 
-`0.0.7`
+`0.0.8`
