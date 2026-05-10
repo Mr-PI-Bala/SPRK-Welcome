@@ -13,6 +13,7 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - [Documentation Principles](#documentation-principles)
 - [Formative Insights](#formative-insights)
 - [Diagram Standard](#diagram-standard)
+- [Classroom Network Strategy](#classroom-network-strategy)
 - [Release Flow](#release-flow)
 
 ## Document Roles
@@ -21,6 +22,7 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - `docs/USER_GUIDE.md`: public doorway guide for starting from SPRK-Welcome.
 - `docs/SPRK_Git_Repository_UserGuide.md`: master GitHub accounts, access requests, branches, commits, pushes, and Pull Requests guide.
 - `docs/SPRK_CodeSpaces_UserGuide.md`: master Codespaces runtime levels, safe checks, and graphics limits guide.
+- `docs/SPRK_Classroom_Network_Test_Guide.md`: classroom backend-host, device, and network validation guide.
 - `docs/SPRK_VSCode_UserGuide.md`: master VS Code Markdown preview/editing, Mermaid, and extension guide.
 - `docs/PROJECT_GUIDE.md`: maintainer path for governance and repository operations.
 - `docs/CHANGELOG.md`: version history.
@@ -57,6 +59,7 @@ docs/
   USER_GUIDE.md
   SPRK_Git_Repository_UserGuide.md
   SPRK_CodeSpaces_UserGuide.md
+  SPRK_Classroom_Network_Test_Guide.md
   SPRK_VSCode_UserGuide.md
   PROJECT_GUIDE.md
   CHANGELOG.md
@@ -229,6 +232,20 @@ Action:
 
 Promote stable issue-comment lessons into `PROJECT_GUIDE.md`, `USER_GUIDE.md`, or the shared SPRK toolchain guides.
 
+### Multiplayer Classroom Tests Need A Host Laptop
+
+Finding:
+
+Browser-based class collaboration needs a backend host that other student devices can reach.
+
+Learning:
+
+A school Chromebook, iPad, iPhone, or Android device can be a good frontend device, but the first reliable backend-host should be a laptop that can run Python or Node, bind to `0.0.0.0`, and allow local network traffic through the firewall.
+
+Action:
+
+Use `docs/SPRK_Classroom_Network_Test_Guide.md` before a live class activity. Test school Wi-Fi first, then the `SPRK Laptop Network`, then fallback to projector/shared-laptop roles if networking blocks device-to-device traffic.
+
 ## Diagram Standard
 
 Use Mermaid first for diagrams.
@@ -240,6 +257,39 @@ Reasons:
 - Diagrams stay text-based and version-controlled.
 
 Use ASCII charts beside Mermaid when the flow must be easy to copy and paste in plain text.
+
+## Classroom Network Strategy
+
+SPRK classroom apps should support a low-friction collaboration pattern:
+
+```text
+Backend host laptop
+  |
+  v
+School Wi-Fi or SPRK Laptop Network
+  |
+  v
+Student browsers on Chromebooks, iPads, phones, and laptops
+```
+
+`SPRK-Hello-Repo` should use this pattern for browser-visible projects that can run in solo mode and then grow into multiplayer classroom mode.
+
+Network order:
+
+1. School Wi-Fi.
+2. `SPRK Laptop Network`, started from the backend-host laptop.
+3. Projector/shared laptop fallback.
+
+The TCL LINKPORT IK511 should be treated as internet for the backend-host laptop, not as a direct multi-student Wi-Fi hotspot by itself. If needed, the host laptop can try to share that connection as the `SPRK Laptop Network`.
+
+Before using a classroom multiplayer project, validate with:
+
+- one backend-host laptop
+- one school Chromebook
+- one iPad
+- one iPhone or Android phone
+
+Use [SPRK_Classroom_Network_Test_Guide.md](SPRK_Classroom_Network_Test_Guide.md) as the test script.
 
 ## Release Flow
 

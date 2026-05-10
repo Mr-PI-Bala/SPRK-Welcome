@@ -10,6 +10,7 @@ This is the master SPRK guide for GitHub Codespaces.
 - [Safe Project Check](#safe-project-check)
 - [Ursina Graphics Limits](#ursina-graphics-limits)
 - [Copilot Chat Took Too Long](#copilot-chat-took-too-long)
+- [Classroom Device Testing](#classroom-device-testing)
 
 ## What Codespaces Is
 
@@ -129,4 +130,16 @@ Expected useful result:
 
 ```text
 GitHub.copilot-chat@...
+```
+
+## Classroom Device Testing
+
+Codespaces is not required for every student in the first classroom multiplayer test.
+
+For browser-visible projects in `SPRK-Hello-Repo`, one backend-host laptop can run the backend while students join from browsers on Chromebooks, iPads, iPhones, Android phones, or other laptops.
+
+Use the dedicated classroom guide:
+
+```text
+docs/SPRK_Classroom_Network_Test_Guide.md
 ```

@@ -2,6 +2,21 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.7 - 2026-05-10
+
+Added classroom network test guidance.
+
+### Added
+
+- Added `docs/SPRK_Classroom_Network_Test_Guide.md`.
+- Documented school Wi-Fi, `SPRK Laptop Network`, and projector fallback options.
+- Documented TCL LINKPORT IK511 as a host-device internet source, not a full classroom hotspot by itself.
+- Added Alpha Student validation questions for Maya.SPRK.
+
+### Changed
+
+- Linked the classroom network test guide from `README.md`, `PROJECT_GUIDE.md`, and `SPRK_CodeSpaces_UserGuide.md`.
+
 ## 0.0.6 - 2026-05-10
 
 Captured durable documentation principles.
