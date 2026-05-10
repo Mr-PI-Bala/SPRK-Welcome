@@ -8,6 +8,7 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - [Governance](#governance)
 - [Repository Purpose](#repository-purpose)
 - [Baseline Structure](#baseline-structure)
+- [AURAVYBE Organization Links](#auravybe-organization-links)
 - [Access And Approval Flow](#access-and-approval-flow)
 - [Diagram Standard](#diagram-standard)
 - [Release Flow](#release-flow)
@@ -66,6 +67,25 @@ New repository creation settings:
 Reason:
 
 The first committed files should come from the SPRK baseline so license, docs, VS Code settings, and governance are consistent.
+
+## AURAVYBE Organization Links
+
+AURAVYBE is the future organization home for cleaner SPRK access control. Current SPRK repositories may remain under `Mr-PI-Bala` until they are deliberately moved or recreated.
+
+Use these links when setting up or reviewing access:
+
+- AURAVYBE members: `https://github.com/orgs/AURAVYBE/people`
+- AURAVYBE teams: `https://github.com/orgs/AURAVYBE/teams`
+- AURAVYBE repositories: `https://github.com/orgs/AURAVYBE/repositories`
+- SPRK-Welcome personal-repo collaborators: `https://github.com/Mr-PI-Bala/SPRK-Welcome/settings/access`
+
+Planned teams:
+
+- `SPRKAdmins`
+- `SPRKTeachers`
+- `SPRKStudents`
+
+Until SPRK repositories move into AURAVYBE, repository access for `Mr-PI-Bala` personal repositories is still managed from each repository's collaborator settings.
 
 ## Access And Approval Flow
 

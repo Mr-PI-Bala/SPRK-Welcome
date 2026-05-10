@@ -2,6 +2,15 @@
 
 This repository uses `major.minor.patch` version tags.
 
+## 0.0.2 - 2026-05-10
+
+AURAVYBE organization link reference.
+
+### Added
+
+- Added AURAVYBE members, teams, repositories, and SPRK-Welcome collaborator links to `docs/PROJECT_GUIDE.md`.
+- Added planned SPRK organization teams.
+
 ## 0.0.1 - 2026-05-10
 
 Initial SPRK-Welcome baseline.
