@@ -339,7 +339,43 @@ Reasons:
 - Students do not need a Mermaid account.
 - Diagrams stay text-based and version-controlled.
 
-Use ASCII charts beside Mermaid when the flow must be easy to copy and paste in plain text.
+Use ASCII charts beside Mermaid for the same flow.
+
+Standard pattern:
+
+1. Add the Mermaid diagram first.
+2. Add `Plain version:` immediately after it.
+3. Add the ASCII chart in a `text` code block.
+
+Example:
+
+````md
+```mermaid
+flowchart LR
+    A["Browser"] --> B["Backend"]
+    B --> C["Shared scoreboard"]
+```
+
+Plain version:
+
+```text
+Browser
+  |
+  v
+Backend
+  |
+  v
+Shared scoreboard
+```
+````
+
+Use this pattern for:
+
+- mission run flows
+- frontend/backend flows
+- classroom device connection flows
+- branch and pull request workflows
+- any process where students need both a picture and a copy/paste-readable fallback
 
 ## Classroom Network Strategy
 SPRK classroom apps should support a low-friction collaboration pattern:

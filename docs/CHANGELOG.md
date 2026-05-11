@@ -1,5 +1,12 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.13 - 2026-05-11
+Standardized diagram documentation.
+
+### Changed
+- Updated `PROJECT_GUIDE.md` to require Mermaid-first diagrams followed by a plain ASCII version for student-facing flows.
+- Called out this pattern for mission run flows, frontend/backend flows, classroom device connection flows, and branch or pull request workflows.
+
 ## 0.0.12 - 2026-05-11
 Documented local guide copies for working repositories.
 
