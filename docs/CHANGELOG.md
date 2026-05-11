@@ -1,5 +1,12 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.12 - 2026-05-11
+Documented local guide copies for working repositories.
+
+### Changed
+- Added a README note that working repositories should carry local copies of the shared SPRK guides.
+- Added maintainer guidance that working repositories should include local Git, Codespaces, VS Code, and classroom network guides.
+
 ## 0.0.11 - 2026-05-11
 Documented access request versus invitation flow.
 

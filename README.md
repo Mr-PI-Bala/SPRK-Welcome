@@ -76,5 +76,7 @@ Make change, commit, push, and open a Pull Request
 - [LICENSE](LICENSE): current repository license notice.
 - [VERSION](VERSION): current version.
 
+Working repositories should carry local copies of the shared SPRK guides in their own `docs/` folder. That lets students stay inside the repository they are using after access is approved.
+
 ## Current Version
-`0.0.11`
+`0.0.12`

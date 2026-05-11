@@ -87,6 +87,12 @@ Reason:
 
 The first committed files should come from the SPRK baseline so license, docs, VS Code settings, and governance are consistent.
 
+Working repository guidance:
+
+- Keep local copies of the shared SPRK guides in each working repository's `docs/` folder.
+- At minimum, include the Git repository guide, Codespaces guide, VS Code guide, and classroom network test guide when the repository supports browser or multiplayer activities.
+- The local README should point to those local copies so students can keep working from inside the repository they already have open.
+
 ## AURAVYBE Organization Links
 AURAVYBE is the future organization home for cleaner SPRK access control. Current SPRK repositories may remain under `Mr-PI-Bala` until they are deliberately moved or recreated.
 
