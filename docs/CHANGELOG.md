@@ -1,5 +1,17 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.11 - 2026-05-11
+Documented access request versus invitation flow.
+
+### Added
+- Added a Mermaid interaction diagram showing Student, SPRK-Welcome Issue, GitHub invitation system, Mr-PI-Bala, and SPRK-Hello-Repo.
+- Added a success-state diagram showing the student can access the private repository and push their own branch after invitation acceptance.
+- Added owner checklist steps for reviewing, granting, verifying, commenting, and closing access request issues.
+
+### Changed
+- Updated `README.md` to clarify that an access request issue is not the access approval screen.
+- Replaced the simplified maintainer access flow in `PROJECT_GUIDE.md` with the new interaction diagram.
+
 ## 0.0.10 - 2026-05-10
 Applied Maya.SPRK welcome-page feedback.
 

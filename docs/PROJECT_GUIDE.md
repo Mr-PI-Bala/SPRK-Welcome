@@ -106,20 +106,44 @@ Planned teams:
 Until SPRK repositories move into AURAVYBE, repository access for `Mr-PI-Bala` personal repositories is still managed from each repository's collaborator settings.
 
 ## Access And Approval Flow
-```text
-Student opens SPRK-Welcome
-  |
-  v
-Student requests access to a private SPRK repository
-  |
-  v
-SPRKTeacher or SPRKAdmin reviews the request
-  |
-  v
-Approved student receives access
-  |
-  v
-Student works in their branch
+Access requests have two systems:
+
+- GitHub Issues record the request and discussion.
+- Repository `Settings > Access` sends the actual invitation.
+
+```mermaid
+sequenceDiagram
+    participant Student as Student<br/>Maya-SPRK
+    participant Request as Request Ticket<br/>SPRK-Welcome Issue
+    participant GitHub as GitHub<br/>Invitation System
+    participant Leader as Repo Owner<br/>Mr-PI-Bala
+    participant WorkRepo as Work Repo<br/>SPRK-Hello-Repo
+
+    Student->>Request: Ask for access
+    Request-->>Leader: Shows up as an open issue
+
+    Leader->>Request: Read the request
+    Leader->>WorkRepo: Go to Settings > Access
+    Leader->>GitHub: Invite Student as collaborator
+
+    GitHub-->>Student: Show pending invitation
+    Student->>GitHub: Accept invitation
+
+    GitHub-->>WorkRepo: Turn on collaborator access
+    Leader->>WorkRepo: Confirm Student has access
+
+    Leader->>Request: Add result comment
+    Leader->>Request: Close the issue
+```
+
+Success state:
+
+```mermaid
+flowchart LR
+    Student["Student"] -->|"Private repo opens"| WorkRepo["SPRK-Hello-Repo"]
+    Student -->|"Own branch can be pushed"| Branch["student branch"]
+    Branch -->|"Pull Request only"| Main["main"]
+    Leader["Repo owner / SPRKAdmin"] -->|"Issue has result comment and is closed"| Request["SPRK-Welcome issue"]
 ```
 
 Students should usually receive write access to create and push their own branches. `main` should be protected in working repositories.

@@ -11,6 +11,17 @@ SPRK is the student-focused Coding Club in the AURAVYBE context. Start here, the
 5. Create your own branch, make a small change, push it, and open a Pull Request.
 6. Optional: for group/multiplayer activities, use the [classroom network test guide](docs/SPRK_Classroom_Network_Test_Guide.md) before students join from phones, Chromebooks, or tablets.
 
+## Access Requests And Invitations
+An access request issue is not the same thing as a GitHub repository invitation.
+
+- The issue is the visible request ticket.
+- The repository owner grants access from the target repository's `Settings > Access` page.
+- GitHub sends the student a pending invitation.
+- The student must accept the invitation before access is active.
+- The request issue should be commented on and closed only after access is verified.
+
+See the full interaction diagram in [SPRK Git Repository User Guide](docs/SPRK_Git_Repository_UserGuide.md#access-request-interaction-flow).
+
 ## Repository Request List
 Use this list as the starting point for Maya.SPRK and future SPRK students.
 
@@ -66,4 +77,4 @@ Make change, commit, push, and open a Pull Request
 - [VERSION](VERSION): current version.
 
 ## Current Version
-`0.0.10`
+`0.0.11`

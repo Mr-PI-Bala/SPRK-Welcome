@@ -5,6 +5,7 @@ This is the master SPRK guide for GitHub accounts, repository access, branches, 
 - [SPRK GitHub Account Pattern](#sprk-github-account-pattern)
 - [Find A Repository](#find-a-repository)
 - [Request Access To A Working Repository](#request-access-to-a-working-repository)
+- [Access Request Interaction Flow](#access-request-interaction-flow)
 - [Accept A Pending Invitation](#accept-a-pending-invitation)
 - [Create Your Branch](#create-your-branch)
 - [Commit And Push](#commit-and-push)
@@ -98,6 +99,55 @@ https://github.com/Mr-PI-Bala/SPRK-Hello-Repo/settings/access
 
 Add `<YourName>-SPRK` as collaborator.
 ~~~
+
+## Access Request Interaction Flow
+The GitHub issue is only the request ticket. It does not approve access by itself.
+
+```mermaid
+sequenceDiagram
+    participant Student as Student<br/>Maya-SPRK
+    participant Request as Request Ticket<br/>SPRK-Welcome Issue
+    participant GitHub as GitHub<br/>Invitation System
+    participant Leader as Repo Owner<br/>Mr-PI-Bala
+    participant WorkRepo as Work Repo<br/>SPRK-Hello-Repo
+
+    Student->>Request: Ask for access
+    Request-->>Leader: Shows up as an open issue
+
+    Leader->>Request: Read the request
+    Leader->>WorkRepo: Go to Settings > Access
+    Leader->>GitHub: Invite Student as collaborator
+
+    GitHub-->>Student: Show pending invitation
+    Student->>GitHub: Accept invitation
+
+    GitHub-->>WorkRepo: Turn on collaborator access
+    Leader->>WorkRepo: Confirm Student has access
+
+    Leader->>Request: Add result comment
+    Leader->>Request: Close the issue
+```
+
+Success state:
+
+```mermaid
+flowchart LR
+    Student["Student<br/>Maya-SPRK"] -->|"Can open the private repository"| WorkRepo["SPRK-Hello-Repo"]
+    Student -->|"Can clone or open Codespaces"| WorkRepo
+    Student -->|"Can create and push own branch"| Branch["maya-sprk branch"]
+    Branch -->|"Reviewed through Pull Request"| Main["main branch"]
+    Leader["Mr-PI-Bala / SPRKAdmin"] -->|"Request verified, commented, closed"| Request["SPRK-Welcome access issue"]
+```
+
+Owner checklist:
+
+1. Read the access request issue.
+2. Open the requested repository's `Settings > Access` page.
+3. Add the requester as a collaborator.
+4. Wait for the requester to accept the GitHub invitation.
+5. Verify the requester appears as an active collaborator.
+6. Comment on the issue with the result.
+7. Close the issue.
 
 ## Accept A Pending Invitation
 After the owner adds you, GitHub may show a pending invitation.
