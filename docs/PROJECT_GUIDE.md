@@ -11,6 +11,7 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - [Documentation Principles](#documentation-principles)
 - [Formative Insights](#formative-insights)
 - [Diagram Standard](#diagram-standard)
+- [Mission Guide Standard](#mission-guide-standard)
 - [Classroom Network Strategy](#classroom-network-strategy)
 - [Release Flow](#release-flow)
 
@@ -376,6 +377,78 @@ Use this pattern for:
 - classroom device connection flows
 - branch and pull request workflows
 - any process where students need both a picture and a copy/paste-readable fallback
+
+## Mission Guide Standard
+Mission guides in `SPRK-Hello-Repo` and later SPRK mission repositories should follow one predictable structure.
+
+Reason:
+
+Middle school students should not have to relearn the document layout for every mission. They should know where to run it, where to play it, where to read the code, and where to make the first safe change.
+
+Standard top-level section order:
+
+| Order | Section | Purpose |
+| --- | --- | --- |
+| 1 | `Start Here` | Numbered first actions for a new student. |
+| 2 | `Mission Navigation` | Two-column table that links common needs to exact sections. |
+| 3 | `Standard SPRK Guidance` | Link back to `SPRK-Welcome` and explain local guide copies. |
+| 4 | `Mission Goal` | One short paragraph saying what students are building or playing. |
+| 5 | `Open The App` | Where the entry file or app link starts. |
+| 6 | `How To Run` | Commands and diagrams for Codespaces, VS Code Desktop, and classroom host laptop when relevant. |
+| 7 | `Entry Point` | The first file or backend command students should understand. |
+| 8 | `Code Files` | Table of files, links, and what to look for. |
+| 9 | `How The Files Work Together` | Mermaid diagram first, then plain ASCII version. |
+| 10 | `What Each File Does` | Table that explains each file in student language. |
+| 11 | `Game Flow` or `App Flow` | Main behavior diagram and plain fallback. |
+| 12 | `Mode` | `1P`, `2P`, `nP`, or mixed-mode label. |
+| 13 | `Play It` | How to use the mission before changing code. |
+| 14 | `Frontend And Backend` | Explain what runs in the browser and what runs on the server. |
+| 15 | `Change It` | One or two safe first edits. |
+| 16 | `Show It` | How the student proves the change worked. |
+| 17 | `Level It Up` | Optional extension ideas. |
+| 18 | `Branch Reminder` | Link back to the Git branch guide. |
+
+Standard navigation table:
+
+```md
+| Need | Go Here |
+| --- | --- |
+| I want to run it | [How To Run](#how-to-run) |
+| I want to play it | [Play It](#play-it) |
+| I want to know where the app starts | [Entry Point](#entry-point) |
+| I want to know which file to open | [Code Files](#code-files) |
+| I want diagrams and function details | [CODE_WALKTHROUGH.md](CODE_WALKTHROUGH.md) |
+| I need to create my branch first | [SPRK Git Repository User Guide](../../../docs/SPRK_Git_Repository_UserGuide.md#create-your-branch) |
+```
+
+Standard file table:
+
+```md
+| File | Link | What To Look For |
+| --- | --- | --- |
+| Page structure | [index.html](../index.html) | Title, controls, student-facing text. |
+| Game behavior | [src/app.js](../src/app.js) | Main functions and event handlers. |
+| Visual design | [src/styles.css](../src/styles.css) | Colors, spacing, layout, phone/tablet rules. |
+| Shared backend | [server.py](../server.py) | API routes and shared classroom state, when the mission has a backend. |
+| Deep explanation | [CODE_WALKTHROUGH.md](CODE_WALKTHROUGH.md) | Diagrams, function table, and main flow. |
+```
+
+Run guidance rules:
+
+1. Put the recommended command first.
+2. Explain what the command does in parentheses or short bullets.
+3. Show the browser URL shape students should expect.
+4. For multiplayer missions, explicitly say whether all devices use one shared backend or separate local state.
+5. If the mission has a backend, do not present `python -m http.server` as the shared-score path because that command only serves static files.
+
+Backend documentation rule:
+
+Every mission that claims `nP` classroom mode must include a `Frontend And Backend` section that names:
+
+- what the frontend does
+- what the backend does
+- where shared state lives
+- what link all devices must use to see the same shared state
 
 ## Classroom Network Strategy
 SPRK classroom apps should support a low-friction collaboration pattern:

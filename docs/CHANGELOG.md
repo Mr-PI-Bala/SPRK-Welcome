@@ -1,5 +1,12 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.14 - 2026-05-11
+Documented mission guide structure.
+
+### Added
+- Added a `Mission Guide Standard` section to `PROJECT_GUIDE.md`.
+- Captured the expected section order, navigation table, file table, run-guidance rules, and backend documentation rule for SPRK mission guides.
+
 ## 0.0.13 - 2026-05-11
 Standardized diagram documentation.
 
