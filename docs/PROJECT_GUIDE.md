@@ -197,6 +197,21 @@ Content starts here.
 ```
 
 Reason: students and maintainers often read raw Markdown in GitHub, Codespaces, or terminal output. Compact headings reduce vertical drift and make the document easier to scan in raw form.
+### Make Start-Here Steps Numbered And Explicit
+When a section is a sequence, use numbered steps instead of bullets.
+
+If a step is optional, start it with `Optional:`.
+
+Use:
+
+```md
+1. Create your account.
+2. Pick a repository.
+3. Request access.
+4. Optional: run the classroom network test for multiplayer projects.
+```
+
+Avoid using plain bullets for required setup steps because students may not know what order to follow.
 
 ### Repository Docs Are The Source Of Truth
 Codex memory can help continuity, but durable decisions belong in repository docs.
@@ -259,6 +274,18 @@ For MERIT/AURAVYBE proprietary protection, the license should not copy Apache's 
 Action:
 
 Keep the MERIT/AURAVYBE proprietary license explicit about no public license, no patent license, access not conferring rights, contribution treatment, notice preservation, third-party licenses, no support/warranty/indemnity, and limitation of liability.
+### Welcome Pages Need A Visible Repository Menu
+Finding:
+
+Maya.SPRK saw examples using `SPRK-Hello-Repo` but did not see a clear list of repositories she could request.
+
+Learning:
+
+A public welcome page should not assume students know which repositories exist or which one to request first.
+
+Action:
+
+Keep a visible repository request list in `README.md`, with status, purpose, and request links or manual request instructions.
 
 ### Multiplayer Classroom Tests Need A Host Laptop
 Finding:

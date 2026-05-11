@@ -53,6 +53,12 @@ https://github.com/<owner>/<repository>.git
 ## Request Access To A Working Repository
 Use GitHub Issues so the request is visible and trackable.
 
+Fast path for the primary repository:
+
+- [Request access to SPRK-Hello-Repo](https://github.com/Mr-PI-Bala/SPRK-Welcome/issues/new?title=Access%20request%3A%20%3CYourName%3E-SPRK%20branch%20access%20for%20SPRK-Hello-Repo&body=%23%23%20Access%20Request%0ARequester%3A%20%60%3CYourName%3E-SPRK%60%20(example%3A%20%60Maya-SPRK%60)%0ARepository%3A%20%60Mr-PI-Bala%2FSPRK-Hello-Repo%60%0ARequested%20access%3A%20%60Write%60%0ABranch%20name%3A%20%60%3Cyourname-sprk%3E%60%20(example%3A%20%60maya-sprk%60)%0A%0A%23%23%20Why%20this%20access%20is%20needed%0AI%20want%20to%20try%20SPRK%20hello%20projects%20and%20push%20my%20own%20branch%20for%20review.%0A%0A%23%23%20Boundaries%0AI%20will%20not%20push%20to%20%60main%60.%0AI%20will%20not%20merge%20pull%20requests.%0AI%20will%20open%20a%20Pull%20Request%20for%20SPRKTeacher%20or%20SPRKAdmin%20review.)
+
+If the link does not work, use the manual steps below.
+
 Steps:
 
 1. Open the working repository.

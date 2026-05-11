@@ -1,5 +1,15 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.10 - 2026-05-10
+Applied Maya.SPRK welcome-page feedback.
+
+### Changed
+- Rebuilt `README.md` around numbered quick-start steps and a visible repository request list.
+- Added direct access-request links for `SPRK-Hello-Repo`.
+- Reworked `SPRK_CodeSpaces_UserGuide.md` into a student flow with troubleshooting at the bottom.
+- Moved classroom device testing into a multiplayer prerequisite instead of a floating CodeSpaces section.
+- Added documentation guidance for numbered start-here steps and visible repository menus.
+
 ## 0.0.9 - 2026-05-10
 Hardened license language and compacted heading style.
 
