@@ -254,6 +254,21 @@ Use this order:
 3. Move student-facing instructions into the correct user guide or cheatsheet.
 4. Keep changelog entries for released documentation changes.
 
+### Code And Docs Move Together
+When a mission's behavior, layout, commands, or student workflow changes, update the mission docs in the same change.
+
+Required checks:
+
+1. If the screen layout changes, update the mission guide's `Play It`, `Open The App`, or `Screen Layout` explanation.
+2. If the run command changes, update `How To Run`.
+3. If frontend/backend behavior changes, update `Frontend And Backend`.
+4. If starter code or challenge targets change, update `Change It` and `CODE_WALKTHROUGH.md`.
+5. If the change affects all missions, update this `PROJECT_GUIDE.md` standard too.
+
+Reason:
+
+Students should never have to guess whether the app or the guide is the current truth. The code and the student-facing guide should teach the same workflow.
+
 ## Formative Insights
 ### Missing Settings Can Mean Missing Permission
 Finding:
@@ -401,9 +416,9 @@ Standard top-level section order:
 | 10 | `What Each File Does` | Table that explains each file in student language. |
 | 11 | `Game Flow` or `App Flow` | Main behavior diagram and plain fallback. |
 | 12 | `Mode` | `1P`, `2P`, `nP`, or mixed-mode label. |
-| 13 | `Play It` | How to use the mission before changing code. |
+| 13 | `Play It` | How to use the mission before changing code, including what the main screen should look like. |
 | 14 | `Frontend And Backend` | Explain what runs in the browser and what runs on the server. |
-| 15 | `Change It` | One or two safe first edits. |
+| 15 | `Change It` | Starter changes, logic challenges, and level-up challenges with hints. |
 | 16 | `Show It` | How the student proves the change worked. |
 | 17 | `Level It Up` | Optional extension ideas. |
 | 18 | `Branch Reminder` | Link back to the Git branch guide. |
@@ -440,6 +455,14 @@ Run guidance rules:
 3. Show the browser URL shape students should expect.
 4. For multiplayer missions, explicitly say whether all devices use one shared backend or separate local state.
 5. If the mission has a backend, do not present `python -m http.server` as the shared-score path because that command only serves static files.
+
+Challenge guidance rules:
+
+1. Every visible in-app challenge should have a matching `Change It` entry in the mission guide.
+2. Starter changes should include hints that point to exact files, functions, constants, or CSS variables.
+3. Logic challenges should change app behavior, not only text or color.
+4. Level-up challenges may require multiple files, but the hint must name the files and the data path.
+5. Avoid puzzle-style hints. The goal is guided exploration, not guessing.
 
 Backend documentation rule:
 

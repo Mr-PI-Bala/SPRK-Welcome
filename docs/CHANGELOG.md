@@ -1,5 +1,12 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.15 - 2026-05-11
+Documented code-and-docs sync for missions.
+
+### Added
+- Added the rule that mission behavior, layout, commands, and student workflows must update matching mission documentation in the same change.
+- Added challenge-guidance rules for starter changes, logic challenges, and level-up challenges with concrete hints.
+
 ## 0.0.14 - 2026-05-11
 Documented mission guide structure.
 
