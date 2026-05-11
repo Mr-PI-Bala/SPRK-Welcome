@@ -12,6 +12,8 @@ This guide is for SPRK maintainers, SPRKAdmin, SPRKTeacher, AgentDraven, and Cod
 - [Formative Insights](#formative-insights)
 - [Diagram Standard](#diagram-standard)
 - [Mission Guide Standard](#mission-guide-standard)
+- [Backend Runtime Standard](#backend-runtime-standard)
+- [Testing Standard](#testing-standard)
 - [Classroom Network Strategy](#classroom-network-strategy)
 - [Release Flow](#release-flow)
 
@@ -472,6 +474,66 @@ Every mission that claims `nP` classroom mode must include a `Frontend And Backe
 - what the backend does
 - where shared state lives
 - what link all devices must use to see the same shared state
+
+## Backend Runtime Standard
+SPRK classroom backends should keep the development environment clean and visible.
+
+### Port Hygiene
+Each backend should check the port it wants before starting.
+
+Required behavior:
+
+1. If the port is free, start normally.
+2. If the port is busy, explain that another server is probably already running.
+3. If the environment can identify the old process safely, ask before stopping it.
+4. If the old process cannot be identified safely, tell the user how to stop the old server and do not start a second unclear server.
+5. Do not leave background servers running after automated tests.
+
+Reason:
+
+Students and maintainers should not have rogue servers holding ports open. Port errors should be readable, not cryptic.
+
+### X-Ray Vision
+Backends should expose a small event feed when the mission is teaching frontend/backend behavior.
+
+Pattern:
+
+```text
+Backend event
+  -> print to terminal
+  -> store recent event
+  -> frontend polls event API
+  -> X-Ray Vision panel displays it
+```
+
+Use this for:
+
+- server start and stop
+- score saved
+- scoreboard cleared
+- room created or joined
+- important validation errors
+
+The X-Ray panel is not a production logging system. It is a classroom teaching window that makes backend behavior visible.
+
+## Testing Standard
+SPRK mission changes should be tested at the right level for the change.
+
+Minimum checks:
+
+1. Compile or syntax-check backend code when applicable.
+2. Start the backend.
+3. Confirm the app page loads.
+4. Confirm API calls work for shared state.
+5. Confirm backend servers are stopped after testing.
+
+Browser checks:
+
+- Use Playwright when it is available in the workspace.
+- Use Codex in-app browser automation when available for local browser inspection.
+- If neither browser tool is available, use HTTP/API tests and clearly say browser visual testing was not available.
+
+For UI layout changes, browser-level inspection is preferred because HTTP checks cannot prove the screen is visually usable.
 
 ## Classroom Network Strategy
 SPRK classroom apps should support a low-friction collaboration pattern:

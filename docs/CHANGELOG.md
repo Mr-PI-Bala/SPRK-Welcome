@@ -1,5 +1,13 @@
 ﻿# Changelog
 This repository uses `major.minor.patch` version tags.
+## 0.0.16 - 2026-05-11
+Documented backend runtime and testing standards.
+
+### Added
+- Added port-hygiene requirements for SPRK classroom backends.
+- Added the `X-Ray Vision` pattern for showing backend events in the frontend.
+- Added testing standards covering backend syntax checks, API checks, browser checks, and cleanup of test servers.
+
 ## 0.0.15 - 2026-05-11
 Documented code-and-docs sync for missions.
 
